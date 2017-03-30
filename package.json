@@ -1,0 +1,24 @@
+{
+  "name": "hydrogencss",
+  "version": "0.1.0",
+  "description": "Atomic CSS for CSS Modules",
+  "main": ".",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eddiemoore/hydrogencss.git"
+  },
+  "keywords": [
+    "atomic",
+    "css",
+    "modules"
+  ],
+  "author": "90 Seconds",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eddiemoore/hydrogencss/issues"
+  },
+  "homepage": "https://github.com/eddiemoore/hydrogencss#readme"
+}
