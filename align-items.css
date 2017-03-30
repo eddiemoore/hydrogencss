@@ -2,14 +2,19 @@
   align-items: baseline;
 }
 
-.flex-start {
-  align-items: flex-start;
+.center {
+  align-items: center;
 }
 
 .flex-end {
   align-items: flex-end;
 }
 
-.center {
-  align-items: center;
+.flex-start {
+  align-items: flex-start;
+}
+
+.stretch {
+  align-items: stretch;
+  align-items:
 }

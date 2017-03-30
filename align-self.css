@@ -1,3 +1,19 @@
+.baseline {
+  align-self: baseline;
+}
+
+.center {
+  align-self: center;
+}
+
+.flex-end {
+  align-self: flex-end;
+}
+
+.flex-start {
+  align-self: flex-start;
+}
+
 .stretch {
   align-self: stretch;
 }
