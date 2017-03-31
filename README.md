@@ -1,6 +1,8 @@
 # hydrogen.css
 Atomic CSS for CSS Modules
 
+[![npm](https://img.shields.io/npm/v/hydrogencss.svg)](http://npm.im/hydrogencss)
+
 ```shell
 npm i -S hydrogencss
 ```
