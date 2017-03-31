@@ -1,0 +1,19 @@
+.auto {
+  overflow: auto;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.scroll {
+  overflow: scroll;
+}
+
+.visible {
+  overflow: visible;
+}
+
+.inherit {
+  overflow: inherit;
+}

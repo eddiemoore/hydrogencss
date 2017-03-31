@@ -2,10 +2,18 @@
   text-align: center;
 }
 
-.right {
-  text-align: right;
+.inherit {
+  text-align: inherit;
+}
+
+.justify {
+  text-align: justify;
 }
 
 .left {
   text-align: left;
+}
+
+.right {
+  text-align: right;
 }

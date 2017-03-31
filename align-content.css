@@ -1,0 +1,23 @@
+.center {
+  align-content: center;
+}
+
+.flex-end {
+  align-content: flex-end;
+}
+
+.flex-start {
+  align-content: flex-start;
+}
+
+.space-around {
+  align-content: space-around;
+}
+
+.space-between {
+  align-content: space-between;
+}
+
+.stretch {
+  align-content: stretch;
+}

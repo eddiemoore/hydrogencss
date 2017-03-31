@@ -1,0 +1,19 @@
+.auto {
+  overflow-y: auto;
+}
+
+.hidden {
+  overflow-y: hidden;
+}
+
+.scroll {
+  overflow-y: scroll;
+}
+
+.visible {
+  overflow-y: visible;
+}
+
+.inherit {
+  overflow-y: inherit;
+}
