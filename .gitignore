@@ -5,4 +5,5 @@
 !LICENSE
 !package.json
 !.gitignore
+!.npmignore
 !build.js
