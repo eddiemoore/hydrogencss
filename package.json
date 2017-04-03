@@ -4,6 +4,8 @@
   "description": "Atomic CSS for CSS Modules",
   "main": ".",
   "scripts": {
+    "build": "node build.js",
+    "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/eddiemoore/hydrogencss/issues"
   },
-  "homepage": "https://github.com/eddiemoore/hydrogencss#readme"
+  "homepage": "https://github.com/eddiemoore/hydrogencss#readme",
+  "devDependencies": {
+    "css": "2.2.1"
+  }
 }
