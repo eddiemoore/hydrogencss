@@ -13,7 +13,7 @@ const generateContent = prop => {
   })
   return {
     name: prop.name,
-    content,
+    content
   }
 }
 

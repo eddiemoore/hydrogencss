@@ -8,7 +8,7 @@
     "prepublish": "npm run build",
     "postpublish": "npm run clean",
     "clean": "git clean -xdf -e node_modules/",
-    "test": "jest"
+    "test": "standard"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,6 @@
   "homepage": "https://github.com/eddiemoore/hydrogencss#readme",
   "devDependencies": {
     "css-tree": "1.0.0-alpha18",
-    "jest": "19.0.2",
-    "request": "2.81.0"
+    "standard": "10.0.1"
   }
 }
