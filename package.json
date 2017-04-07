@@ -1,6 +1,6 @@
 {
   "name": "hydrogencss",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Atomic CSS for CSS Modules",
   "main": ".",
   "scripts": {
@@ -25,9 +25,10 @@
   },
   "homepage": "https://github.com/eddiemoore/hydrogencss#readme",
   "devDependencies": {
+    "css-tree": "1.0.0-alpha18",
     "standard": "10.0.1"
   },
-  "dependencies": {
-    "css-tree": "1.0.0-alpha18"
-  }
+  "files": [
+    "/"
+  ]
 }
