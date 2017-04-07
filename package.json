@@ -1,12 +1,11 @@
 {
   "name": "hydrogencss",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Atomic CSS for CSS Modules",
   "main": ".",
   "scripts": {
     "build": "node build.js",
     "prepublish": "npm run build",
-    "postpublish": "npm run clean",
     "clean": "git clean -xdf -e node_modules/",
     "test": "standard"
   },
