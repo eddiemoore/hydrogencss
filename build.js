@@ -1,37 +1,61 @@
 const fs = require('fs')
 const path = require('path')
-const css = require('css')
+const request = require('request')
+const parse = require('css-tree/lib/lexer/grammar/parse')
 
-const src = path.join(__dirname, 'src')
+const PATH = 'https://raw.githubusercontent.com/mdn/data/master/css/properties.json'
 
-fs.readdir(src, (err, items) => {
-  items.forEach(item => {
-    const source = path.join(src, item)
-    const content = fs.readFileSync(source, 'utf8')
-    const ast = css.parse(content, { source })
-    const dir = item.split('.')[0]
-    // Make the sub dir
-    if (!fs.existsSync(dir)) {
-      fs.mkdirSync(dir)
-    }
+const generateContent = prop => {
+  const content = prop.terms.map(term => ({
+    name: term.name,
+    content: `.${term.name}{${prop.name}: ${term.name};}`
+  }))
+  return {
+    name: prop.name,
+    content,
+  }
+}
 
-    // Write the main file including all selectors
+const createDirectory = prop => {
+  if (!fs.existsSync(prop.name)) {
+    fs.mkdirSync(prop.name)
+  }
+}
+
+const createFiles = prop => {
+  prop.content.forEach(value => {
     fs.writeFileSync(
-      path.join(__dirname, item),
-      content
+      path.join(__dirname, prop.name, `${value.name}.css`),
+      value.content
     )
-
-    // Go through each declaration and write each selector into own file
-    ast.stylesheet.rules.forEach(rule => {
-      const selector = rule.selectors[0]
-      const c = `${selector}{${rule.declarations.map(dec => (
-          `${dec.property}:${dec.value};`
-        )).join('')}}`
-
-      fs.writeFileSync(
-        path.join(__dirname, dir, `${selector.substring(1)}.css`),
-        c
-      )
-    })
   })
-})
+}
+
+const createJoinedFile = prop => {
+  const content = prop.content.map(c => c.content).join('')
+  fs.writeFileSync(
+    path.join(__dirname, `${prop.name}.css`),
+    content
+  )
+}
+
+if (process.argv[1].split('/').pop().includes('build')) {
+  request(PATH, (req, res) => {
+    if (res.statusCode >= 400) throw Error('Failed to load properties')
+
+    const json = JSON.parse(res.body)
+    Object
+      .keys(json)
+      .map(key => Object.assign({}, { name: key }, parse(json[key].syntax)))
+      .map(prop => Object.assign({}, prop, {
+        terms: prop.terms.filter(term => term.type === 'Keyword')
+      }))
+      .filter(prop => prop.terms.length > 0)
+      .map(generateContent)
+      .forEach(prop => {
+        createDirectory(prop)
+        createFiles(prop)
+        createJoinedFile(prop)
+      })
+  })
+}
