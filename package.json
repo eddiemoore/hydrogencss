@@ -1,6 +1,6 @@
 {
   "name": "hydrogencss",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Atomic CSS for CSS Modules",
   "main": ".",
   "scripts": {
