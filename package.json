@@ -6,7 +6,9 @@
   "scripts": {
     "build": "node build.js",
     "prepublish": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postpublish": "npm run clean",
+    "clean": "git clean -xdf -e node_modules/",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,8 @@
   },
   "homepage": "https://github.com/eddiemoore/hydrogencss#readme",
   "devDependencies": {
-    "css": "2.2.1"
+    "css-tree": "1.0.0-alpha18",
+    "jest": "19.0.2",
+    "request": "2.81.0"
   }
 }
