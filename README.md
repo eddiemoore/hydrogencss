@@ -32,7 +32,6 @@ The alternate way to import is
   composes: <value> from 'hydrogencss/<property>/<value>.css';
 }
 ```
-This file will just include the single class with the property.
 
 Example:
 ```css
@@ -40,6 +39,7 @@ Example:
   composes: flex from 'hydrogencss/display/flex.css';
 }
 ```
+
 Which will just include:
 ```css
 .flex { display: flex; }
