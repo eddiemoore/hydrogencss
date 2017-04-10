@@ -45,4 +45,4 @@ Which will just include:
 .flex { display: flex; }
 ```
 
-To see all the properties and values available please check the docs folder.
+To see all the properties and values available please check the [docs](docs/) folder.
