@@ -50,21 +50,23 @@ const createDocs = prop => {
       if (a.name > b.name) return 1
       return 0
     })
-    .map(value => `## ${value.name}
+    .map(value => {
+      const className = !Number.isNaN(parseInt(value.name, 10)) ? `n${value.name}` : value.name
+      return `## ${value.name}
 \`\`\`css
 .selector {
-  composes: ${value.name} from 'hydrogencss/${prop.name}.css'
+  composes: ${className} from 'hydrogencss/${prop.name}.css'
 }
 \`\`\`
 
 or:
 \`\`\`css
 .selector {
-  composes: ${value.name} from 'hydrogencss/${prop.name}/${value.name}.css'
+  composes: ${className} from 'hydrogencss/${prop.name}/${value.name}.css'
 }
 \`\`\`
 
-`).join('')
+`}).join('')
 
   fs.writeFileSync(
     path.join(__dirname, 'docs', `${prop.name}.md`),

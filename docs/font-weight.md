@@ -5,126 +5,126 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight
 ## 100
 ```css
 .selector {
-  composes: 100 from 'hydrogencss/font-weight.css'
+  composes: n100 from 'hydrogencss/font-weight.css'
 }
 ```
 
 or:
 ```css
 .selector {
-  composes: 100 from 'hydrogencss/font-weight/100.css'
+  composes: n100 from 'hydrogencss/font-weight/100.css'
 }
 ```
 
 ## 200
 ```css
 .selector {
-  composes: 200 from 'hydrogencss/font-weight.css'
+  composes: n200 from 'hydrogencss/font-weight.css'
 }
 ```
 
 or:
 ```css
 .selector {
-  composes: 200 from 'hydrogencss/font-weight/200.css'
+  composes: n200 from 'hydrogencss/font-weight/200.css'
 }
 ```
 
 ## 300
 ```css
 .selector {
-  composes: 300 from 'hydrogencss/font-weight.css'
+  composes: n300 from 'hydrogencss/font-weight.css'
 }
 ```
 
 or:
 ```css
 .selector {
-  composes: 300 from 'hydrogencss/font-weight/300.css'
+  composes: n300 from 'hydrogencss/font-weight/300.css'
 }
 ```
 
 ## 400
 ```css
 .selector {
-  composes: 400 from 'hydrogencss/font-weight.css'
+  composes: n400 from 'hydrogencss/font-weight.css'
 }
 ```
 
 or:
 ```css
 .selector {
-  composes: 400 from 'hydrogencss/font-weight/400.css'
+  composes: n400 from 'hydrogencss/font-weight/400.css'
 }
 ```
 
 ## 500
 ```css
 .selector {
-  composes: 500 from 'hydrogencss/font-weight.css'
+  composes: n500 from 'hydrogencss/font-weight.css'
 }
 ```
 
 or:
 ```css
 .selector {
-  composes: 500 from 'hydrogencss/font-weight/500.css'
+  composes: n500 from 'hydrogencss/font-weight/500.css'
 }
 ```
 
 ## 600
 ```css
 .selector {
-  composes: 600 from 'hydrogencss/font-weight.css'
+  composes: n600 from 'hydrogencss/font-weight.css'
 }
 ```
 
 or:
 ```css
 .selector {
-  composes: 600 from 'hydrogencss/font-weight/600.css'
+  composes: n600 from 'hydrogencss/font-weight/600.css'
 }
 ```
 
 ## 700
 ```css
 .selector {
-  composes: 700 from 'hydrogencss/font-weight.css'
+  composes: n700 from 'hydrogencss/font-weight.css'
 }
 ```
 
 or:
 ```css
 .selector {
-  composes: 700 from 'hydrogencss/font-weight/700.css'
+  composes: n700 from 'hydrogencss/font-weight/700.css'
 }
 ```
 
 ## 800
 ```css
 .selector {
-  composes: 800 from 'hydrogencss/font-weight.css'
+  composes: n800 from 'hydrogencss/font-weight.css'
 }
 ```
 
 or:
 ```css
 .selector {
-  composes: 800 from 'hydrogencss/font-weight/800.css'
+  composes: n800 from 'hydrogencss/font-weight/800.css'
 }
 ```
 
 ## 900
 ```css
 .selector {
-  composes: 900 from 'hydrogencss/font-weight.css'
+  composes: n900 from 'hydrogencss/font-weight.css'
 }
 ```
 
 or:
 ```css
 .selector {
-  composes: 900 from 'hydrogencss/font-weight/900.css'
+  composes: n900 from 'hydrogencss/font-weight/900.css'
 }
 ```
 
