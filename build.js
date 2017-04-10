@@ -17,9 +17,9 @@ const generateContent = prop => {
   }
 }
 
-const createDirectory = prop => {
-  if (!fs.existsSync(prop.name)) {
-    fs.mkdirSync(prop.name)
+const createDirectory = name => {
+  if (!fs.existsSync(name)) {
+    fs.mkdirSync(name)
   }
 }
 
@@ -40,6 +40,38 @@ const createJoinedFile = prop => {
   )
 }
 
+const createDocs = prop => {
+  const content = `# ${prop.name}\n\n` +
+  `https://developer.mozilla.org/en-US/docs/Web/CSS/${prop.name}\n\n` +
+  prop.content
+    .concat()
+    .sort((a, b) => {
+      if (a.name < b.name) return -1
+      if (a.name > b.name) return 1
+      return 0
+    })
+    .map(value => `## ${value.name}
+\`\`\`css
+.selector {
+  composes: ${value.name} from 'hydrogencss/${prop.name}.css'
+}
+\`\`\`
+
+or:
+\`\`\`css
+.selector {
+  composes: ${value.name} from 'hydrogencss/${prop.name}/${value.name}.css'
+}
+\`\`\`
+
+`).join('')
+
+  fs.writeFileSync(
+    path.join(__dirname, 'docs', `${prop.name}.md`),
+    content
+  )
+}
+
 if (process.argv[1].split('/').pop().includes('build')) {
   Object
     .keys(data.properties)
@@ -50,8 +82,11 @@ if (process.argv[1].split('/').pop().includes('build')) {
     .filter(prop => prop.terms.length > 0)
     .map(generateContent)
     .forEach(prop => {
-      createDirectory(prop)
+      createDirectory(prop.name)
       createFiles(prop)
       createJoinedFile(prop)
+      // Docs
+      createDirectory('docs')
+      createDocs(prop)
     })
 }

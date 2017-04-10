@@ -4,6 +4,7 @@
   "description": "Atomic CSS for CSS Modules",
   "main": ".",
   "scripts": {
+    "prebuild": "rimraf docs/",
     "build": "node build.js",
     "prepublish": "npm run build",
     "clean": "git clean -xdf -e node_modules/",
@@ -26,6 +27,7 @@
   "homepage": "https://github.com/eddiemoore/hydrogencss#readme",
   "devDependencies": {
     "css-tree": "1.0.0-alpha18",
+    "rimraf": "2.6.1",
     "standard": "10.0.1"
   },
   "files": [

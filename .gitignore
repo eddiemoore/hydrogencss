@@ -8,3 +8,4 @@
 !.npmignore
 !build.js
 !test/
+!docs/
