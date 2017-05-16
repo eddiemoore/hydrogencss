@@ -27,5 +27,5 @@ const createJoinedFile = prop => {
 module.exports = {
   createDirectory,
   createFiles,
-  createJoinedFile,
+  createJoinedFile
 }

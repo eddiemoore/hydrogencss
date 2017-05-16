@@ -6,7 +6,7 @@ const { generateContent } = require('./src/content')
 const {
   createDirectory,
   createFiles,
-  createJoinedFile,
+  createJoinedFile
 } = require('./src/files')
 const { createDocs } = require('./src/docs')
 

@@ -1,5 +1,6 @@
 const fs = require('fs')
 const path = require('path')
+const { getClassName } = require('./classname')
 
 const createDocs = prop => {
   const content = `# ${prop.name}\n\n` +
@@ -12,7 +13,7 @@ const createDocs = prop => {
       return 0
     })
     .map(value => {
-      const className = !Number.isNaN(parseInt(value.name, 10)) ? `n${value.name}` : value.name
+      const className = getClassName(value.name)
       return `## ${value.name}
 \`\`\`css
 .selector {
