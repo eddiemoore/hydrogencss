@@ -30,3 +30,17 @@ or:
 }
 ```
 
+## balance-all
+```css
+.selector {
+  composes: balance-all from 'hydrogencss/column-fill.css'
+}
+```
+
+or:
+```css
+.selector {
+  composes: balance-all from 'hydrogencss/column-fill/balance-all.css'
+}
+```
+

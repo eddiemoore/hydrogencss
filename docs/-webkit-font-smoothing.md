@@ -16,6 +16,20 @@ or:
 }
 ```
 
+## auto
+```css
+.selector {
+  composes: auto from 'hydrogencss/-webkit-font-smoothing.css'
+}
+```
+
+or:
+```css
+.selector {
+  composes: auto from 'hydrogencss/-webkit-font-smoothing/auto.css'
+}
+```
+
 ## none
 ```css
 .selector {

@@ -14,11 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/eddiemoore/hydrogencss.git"
   },
-  "keywords": [
-    "atomic",
-    "css",
-    "modules"
-  ],
+  "keywords": ["atomic", "css", "modules"],
   "author": "90 Seconds",
   "license": "MIT",
   "bugs": {
@@ -26,11 +22,9 @@
   },
   "homepage": "https://github.com/eddiemoore/hydrogencss#readme",
   "devDependencies": {
-    "css-tree": "1.0.0-alpha18",
-    "rimraf": "2.6.1",
-    "standard": "10.0.1"
+    "css-tree": "1.0.0-alpha.28",
+    "rimraf": "2.6.2",
+    "standard": "11.0.1"
   },
-  "files": [
-    "/"
-  ]
+  "files": ["/"]
 }

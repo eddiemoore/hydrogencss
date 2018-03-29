@@ -30,17 +30,3 @@ or:
 }
 ```
 
-## unset
-```css
-.selector {
-  composes: unset from 'hydrogencss/-moz-osx-font-smoothing.css'
-}
-```
-
-or:
-```css
-.selector {
-  composes: unset from 'hydrogencss/-moz-osx-font-smoothing/unset.css'
-}
-```
-

@@ -30,6 +30,20 @@ or:
 }
 ```
 
+## revert
+```css
+.selector {
+  composes: revert from 'hydrogencss/all.css'
+}
+```
+
+or:
+```css
+.selector {
+  composes: revert from 'hydrogencss/all/revert.css'
+}
+```
+
 ## unset
 ```css
 .selector {
