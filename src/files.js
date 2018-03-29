@@ -10,7 +10,7 @@ const createDirectory = name => {
 const createFiles = prop => {
   prop.content.forEach(value => {
     fs.writeFileSync(
-      path.join(__dirname, '..', prop.name, `${value.name}.css`),
+      path.join(__dirname, '..', prop.name, value.name + '.css'),
       value.content
     )
   })
@@ -18,10 +18,7 @@ const createFiles = prop => {
 
 const createJoinedFile = prop => {
   const content = prop.content.map(c => c.content).join('')
-  fs.writeFileSync(
-    path.join(__dirname, '..', `${prop.name}.css`),
-    content
-  )
+  fs.writeFileSync(path.join(__dirname, '..', prop.name + '.css'), content)
 }
 
 module.exports = {
