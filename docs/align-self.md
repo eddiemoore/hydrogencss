@@ -16,59 +16,17 @@ or:
 }
 ```
 
-## baseline
+## normal
 ```css
 .selector {
-  composes: baseline from 'hydrogencss/align-self.css'
+  composes: normal from 'hydrogencss/align-self.css'
 }
 ```
 
 or:
 ```css
 .selector {
-  composes: baseline from 'hydrogencss/align-self/baseline.css'
-}
-```
-
-## center
-```css
-.selector {
-  composes: center from 'hydrogencss/align-self.css'
-}
-```
-
-or:
-```css
-.selector {
-  composes: center from 'hydrogencss/align-self/center.css'
-}
-```
-
-## flex-end
-```css
-.selector {
-  composes: flex-end from 'hydrogencss/align-self.css'
-}
-```
-
-or:
-```css
-.selector {
-  composes: flex-end from 'hydrogencss/align-self/flex-end.css'
-}
-```
-
-## flex-start
-```css
-.selector {
-  composes: flex-start from 'hydrogencss/align-self.css'
-}
-```
-
-or:
-```css
-.selector {
-  composes: flex-start from 'hydrogencss/align-self/flex-start.css'
+  composes: normal from 'hydrogencss/align-self/normal.css'
 }
 ```
 
