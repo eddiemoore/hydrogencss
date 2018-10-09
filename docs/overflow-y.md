@@ -16,6 +16,20 @@ or:
 }
 ```
 
+## clip
+```css
+.selector {
+  composes: clip from 'hydrogencss/overflow-y.css'
+}
+```
+
+or:
+```css
+.selector {
+  composes: clip from 'hydrogencss/overflow-y/clip.css'
+}
+```
+
 ## hidden
 ```css
 .selector {

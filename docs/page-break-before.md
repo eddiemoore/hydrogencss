@@ -58,6 +58,20 @@ or:
 }
 ```
 
+## recto
+```css
+.selector {
+  composes: recto from 'hydrogencss/page-break-before.css'
+}
+```
+
+or:
+```css
+.selector {
+  composes: recto from 'hydrogencss/page-break-before/recto.css'
+}
+```
+
 ## right
 ```css
 .selector {
@@ -69,6 +83,20 @@ or:
 ```css
 .selector {
   composes: right from 'hydrogencss/page-break-before/right.css'
+}
+```
+
+## verso
+```css
+.selector {
+  composes: verso from 'hydrogencss/page-break-before.css'
+}
+```
+
+or:
+```css
+.selector {
+  composes: verso from 'hydrogencss/page-break-before/verso.css'
 }
 ```
 

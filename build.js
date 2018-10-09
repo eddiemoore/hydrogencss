@@ -1,5 +1,3 @@
-const fs = require('fs')
-const path = require('path')
 const parse = require('css-tree/lib/lexer/grammar/parse')
 const data = require('css-tree/data')
 const { generateContent } = require('./src/content')

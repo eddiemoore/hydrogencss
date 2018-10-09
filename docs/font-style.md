@@ -30,17 +30,3 @@ or:
 }
 ```
 
-## oblique
-```css
-.selector {
-  composes: oblique from 'hydrogencss/font-style.css'
-}
-```
-
-or:
-```css
-.selector {
-  composes: oblique from 'hydrogencss/font-style/oblique.css'
-}
-```
-
